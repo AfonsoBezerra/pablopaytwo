@@ -1,113 +1,140 @@
-import Image from "next/image";
+'use client'
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel";
+import AutoScroll from "embla-carousel-auto-scroll";
+import AOS from 'aos';
+import 'aos/dist/aos.css'
+
+const carouselItems = ['$PabloPay', '$PabloPay', '$PabloPay', '$PabloPay',
+  '$PabloPay', '$PabloPay', '$PabloPay', '$PabloPay', '$PabloPay', '$PabloPay',
+  '$PabloPay', '$PabloPay', '$PabloPay', '$PabloPay', '$PabloPay', '$PabloPay',
+  '$PabloPay', '$PabloPay', '$PabloPay', '$PabloPay', '$PabloPay', '$PabloPay']
 
 export default function Home() {
+  AOS.init();
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="bg-[#1d1d1d] bg-cover bg-center relative h-full">
+      <div className="bg-blue-500 pt-10 max-[1900px]:!pt-0 h-[95vh] max-[1900px]:!h-[110vh] max-[1100px]:!h-full  relative w-full">
+        <div className="flex justify-center items-center max-w-1500 mx-auto md:pt-0 pt-[10px] max-2xl:!pt-0 h-fit">
+          <div data-aos="zoom-in"
+            data-aos-offset="200"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-out" className="flex flex-col items-center">
+            <div className="z-[300]" style={{ opacity: 1, transform: 'none' }}>
+              <div className="w-full flex justify-center z-20 text-[180px] max-md:text-[100px] max-sm:text-[80px]">
+                PABLOPAY
+              </div>
+              <div className="text-center md:text-2xl text-sm max-sm:text-xl">Powered by solana</div>
+            </div>
+          </div>
+        </div>
+        <div className="w-full flex justify-center">
+          <div className="flex flex-col max-[1100px]:gap-10 w-full items-center h-full">
+            <div data-aos="zoom-in"
+                data-aos-offset="200"
+                data-aos-delay="300"
+                data-aos-duration="500"
+                data-aos-easing="ease-in-out"  className="w-full flex flex-col items-center text-black md:text-[2vw] text-[20px] flex-1 pr-[400px] max-[1100px]:pr-0">
+              <div className="md:max-w-[30vw] max-xl:!max-w-[50vw] pt-[5vw] text-center max-sm:!max-w-[95%] max-md:!max-w-[80%]">
+                <div className="z-[300]" style={{ opacity: 1, transform: 'none' }}>
+                  <p className="text-5xl max-sm:text-3xl"><strong>PabloPay</strong> é um grande aventureiro e um <strong>verdadeiro</strong> contador de histórias.</p>
+                </div>
+              </div>
+              <div className="mt-14 flex md:flex-row flex-col gap-10 items-center justify-center md:ml-[-70px]">
+                <div className="z-[300]" style={{ opacity: 1, transform: 'none' }}>
+                  <a href="https://raydium.io/swap/?outputCurrency=5z3EqYQo9HiCEs3R84RCDMu2n7anpDMxRhdK8PSWmrRC" rel="noopener noreferrer" target="_blank">
+                    <button className="font-display text-white md:text-4xl text-2xl bg-red-500 border-4 rounded-0 border-black -rotate-[5deg] shadow px-5 py-3 transition-all ease-in-out opacity-100 md:hover:scale-105">
+                      COMPRAR PABLOS
+                    </button>
+                  </a>
+                </div>
+                <div className="z-[300]" style={{ opacity: 1, transform: 'none' }}>
+                  <div className="flex gap-4">
+                    <a rel="noopener noreferrer" target="_blank" href="https://twitter.com/PONKESOL">
+                      <div className="relative md:w-14 md:h-14 h-12 bg-black w-12 md:hover:scale-105 p-2 rotate-[5deg]">
+                        <img src="/xlogo.png" alt="xlogo" />
+                      </div>
+                    </a>
+                    <a rel="noopener noreferrer" target="_blank" href="https://t.me/ponkesol">
+                      <div className="relative md:w-14 md:h-14 h-12 w-12 flex justify-center items-center bg-black md:hover:scale-105 p-2 -rotate-[5deg]">
+                        <img src="/discord.png" alt="discordlogo" />
+                      </div>
+                    </a>
+                    <a rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/ponkesolana/">
+                      <div className="relative md:w-14 md:h-14 h-12 w-12 bg-black md:hover:scale-105 p-2 rotate-[5deg]">
+                        <img src="/instagram.svg" alt="instalogo" />
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="max-[1100px]:hidden block h-full">
+              <img src="/image1.png" alt="image1" className="absolute bottom-0 right-0 w-[650px] h-[700px] max-[1700px]:w-[500px] max-[1700px]:h-[550px] rotate-" />
+            </div>
+            <div className="w-full flex justify-end">
+              <img className="max-[1100px]:block hidden w-[400px]" src="/image1.png" alt="img-responsive" />
+            </div>
+        </div>
+          {/* <div className="md:absolute left-0 md:bottom-[-8px] md:mb-0 md:w-[38vw] md:h-[38vw] 2500:max-w-[28vw] w-[100vw] h-[50vw] flex-1"></div> */}
         </div>
       </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className="w-full py-1 bg-[#1d1d1d]">
+        <div className="w-full bg-blue-200 py-4">
+          <Carousel
+            className="w-full h-full relative pointer-events-none"
+            opts={{
+              loop: true,
+              align: "center",
+            }}
+            plugins={[
+              AutoScroll({
+                speed: 2,
+              }),
+            ]}
+          >
+            <CarouselContent className="ml-0">
+              {carouselItems.map((item, index) => (
+                <CarouselItem
+                  key={index}
+                  className="basis-1/3 w-full pl-0 pr-4 flex-[0_0_9%] max-[1750px]:!flex-[0_0_12%] max-xl:!flex-[0_0_16%] max-[970px]:!flex-[0_0_20%] max-md:!flex-[0_0_25%] max-sm:!flex-[0_0_35%] max-[450px]:!flex-[0_0_45%] max-[350px]:!flex-[0_0_55%]"
+                >
+                  <h1 className="uppercase text-4xl">{item}</h1>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+          </Carousel>
+        </div>
       </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      {/* <div className="border-b-4 border-b-black md:pb-32 pb-20 md:px-0 px-5">
+          <div className="max-w-1500 mx-auto relative md:pt-24 pt-14">
+            <div style={{ opacity: 1, transform: 'none' }}>
+              <div className="md:text-[90px] text-[52px] text-center">
+                <div className="md:leading-[90px] leading-[52px] text-yellow">
+                  WELCOME TO
+                </div>
+                <div className="font-display md:text-[180px] text-[105px] leading-[0.85]">
+                  PONKELAND
+                </div>
+              </div>
+              <div className="flex md:flex-row flex-col md:items-center md:justify-center items-start gap-8 pt-14 text-center">
+                <div className="text-black md:text-[20px] text-[14px] md:leading-[32px] leading-[22px]">
+                  Join us on our journey to the moon with $PONKE! Get your PONKE tokens now and be part of the PONKELAND community.
+                </div>
+              </div>
+              <div className="flex md:flex-row flex-col md:items-center md:justify-center items-start gap-8 pt-14">
+                <a href="https://raydium.io/swap/?outputCurrency=5z3EqYQo9HiCEs3R84RCDMu2n7anpDMxRhdK8PSWmrRC" rel="noopener noreferrer" target="_blank">
+                  <button className="font-display text-white md:text-4xl text-2xl bg-red border-4 rounded-0 border-black rotate-[5deg] shadow px-5 py-3 transition-all ease-in-out opacity-100 md:hover:scale-105">
+                    BUY PONKE
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div> */}
     </main>
   );
 }
