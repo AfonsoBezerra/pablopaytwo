@@ -7,6 +7,7 @@ import {
 import AutoScroll from "embla-carousel-auto-scroll";
 import AOS from 'aos';
 import 'aos/dist/aos.css'
+import { useEffect } from "react";
 
 const carouselItems = ['$PabloPay', '$PabloPay', '$PabloPay', '$PabloPay',
   '$PabloPay', '$PabloPay', '$PabloPay', '$PabloPay', '$PabloPay', '$PabloPay',
@@ -14,7 +15,9 @@ const carouselItems = ['$PabloPay', '$PabloPay', '$PabloPay', '$PabloPay',
   '$PabloPay', '$PabloPay', '$PabloPay', '$PabloPay', '$PabloPay', '$PabloPay']
 
 export default function Home() {
-  AOS.init();
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
     <main className="bg-[#1d1d1d] bg-cover bg-center relative h-full">
       <div className="bg-blue-500 pt-10 max-[1900px]:!pt-0 h-[95vh] max-[1900px]:!h-[110vh] max-[1100px]:!h-full  relative w-full">
@@ -37,11 +40,9 @@ export default function Home() {
                 data-aos-offset="200"
                 data-aos-delay="300"
                 data-aos-duration="500"
-                data-aos-easing="ease-in-out"  className="w-full flex flex-col items-center text-black md:text-[2vw] text-[20px] flex-1 pr-[400px] max-[1100px]:pr-0">
+                data-aos-easing="ease-in-out" className="w-full flex flex-col items-center text-black md:text-[2vw] text-[20px] flex-1 pr-[400px] max-[1100px]:pr-0">
               <div className="md:max-w-[30vw] max-xl:!max-w-[50vw] pt-[5vw] text-center max-sm:!max-w-[95%] max-md:!max-w-[80%]">
-                <div className="z-[300]" style={{ opacity: 1, transform: 'none' }}>
-                  <p className="text-5xl max-sm:text-3xl"><strong>PabloPay</strong> é um grande aventureiro e um <strong>verdadeiro</strong> contador de histórias.</p>
-                </div>
+                <p className="text-5xl max-sm:text-3xl"><strong>PabloPay</strong> é um grande aventureiro e um <strong>verdadeiro</strong> contador de histórias.</p>
               </div>
               <div className="mt-14 flex md:flex-row flex-col gap-10 items-center justify-center md:ml-[-70px]">
                 <div className="z-[300]" style={{ opacity: 1, transform: 'none' }}>
