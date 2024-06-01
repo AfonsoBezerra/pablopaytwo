@@ -98,7 +98,7 @@ const Hero = () => {
                     <a
                       rel="noopener noreferrer"
                       target="_blank"
-                      href="https://twitter.com/PONKESOL"
+                      href="https://x.com/pablopaysol"
                     >
                       <div className="relative md:w-14 md:h-14 h-12 bg-black w-12 md:hover:scale-105 p-2 rotate-[5deg]">
                         <img src="/xlogo.png" alt="xlogo" />
@@ -116,7 +116,7 @@ const Hero = () => {
                     <a
                       rel="noopener noreferrer"
                       target="_blank"
-                      href="https://www.instagram.com/ponkesolana/"
+                      href="https://www.instagram.com/pablopaysolana/"
                     >
                       <div className="relative md:w-14 md:h-14 h-12 w-12 bg-black md:hover:scale-105 p-2 rotate-[5deg]">
                         <img src="/instagram.svg" alt="instalogo" />

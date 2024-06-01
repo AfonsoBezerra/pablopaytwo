@@ -16,7 +16,7 @@ const Footer = () => {
               <a
                 rel="noopener noreferrer"
                 target="_blank"
-                href="https://twitter.com/PONKESOL"
+                href="https://x.com/pablopaysol"
               >
                 <div className="relative md:w-14 md:h-14 h-12 bg-black w-12 md:hover:scale-105 p-2 rotate-[5deg]">
                   <img src="/xlogo.png" alt="xlogo" />
@@ -38,7 +38,7 @@ const Footer = () => {
               <a
                 rel="noopener noreferrer"
                 target="_blank"
-                href="https://www.instagram.com/ponkesolana/"
+                href="https://www.instagram.com/pablopaysolana/"
               >
                 <div className="relative md:w-14 md:h-14 h-12 w-12 bg-black md:hover:scale-105 p-2 rotate-[5deg]">
                   <img src="/instagram.svg" alt="instalogo" />
@@ -47,8 +47,8 @@ const Footer = () => {
             </div>
           </div>
           <div style={{ opacity: 1, transform: "none" }}>
-            <div className="flex lg:flex-row flex-col-reverse gap-24 justify-center items-center lg:mt-[-140px] mt-20">
-              <div className="relative lg:!w-[400px] w-screen h-[150px] lg:!h-[400px] lg:mt-36">
+            <div className="flex lg:flex-row flex-col-reverse lg:gap-24 gap-10 justify-center items-center lg:mt-[-140px] mt-20">
+              <div className="relative lg:!w-[400px] w-screen h-[350px] lg:!h-[400px] lg:mt-36">
                 <img
                   alt="head"
                   className="w-full object-cover lg:object-cover object-top"
