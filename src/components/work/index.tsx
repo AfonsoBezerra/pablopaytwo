@@ -29,8 +29,8 @@ const Work = () => {
             <p>
               Pablo está recrutando novos{" "}
               <span className="text-blue-500">Marçais</span> para suas
-              filosofias vida paraz deixar ele cada vez mais rico, digo mudarem
-              de vida .
+              filosofias de vida para deixar ele cada vez mais rico, digo mudarem
+              de vida.
             </p>
           </div>
         </div>
