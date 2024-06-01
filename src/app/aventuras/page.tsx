@@ -59,7 +59,7 @@ const Aventuras = () => {
 
     userImage.onload = () => {
       canvas.width = 500; // Set canvas size based on your requirements
-      canvas.height = 500;
+      canvas.height = 600;
 
       context?.drawImage(userImage, 0, 0, canvas.width, canvas.height);
 
