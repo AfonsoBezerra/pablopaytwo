@@ -27,7 +27,7 @@ const Footer = () => {
               <a
                 rel="noopener noreferrer"
                 target="_blank"
-                href="https://t.me/ponkesol"
+                href="https://discord.gg/bx93Ya5am5"
               >
                 <div className="relative md:w-14 md:h-14 h-12 w-12 flex justify-center items-center bg-black md:hover:scale-105 p-2 -rotate-[5deg]">
                   <img src="/discord.png" alt="discordlogo" />

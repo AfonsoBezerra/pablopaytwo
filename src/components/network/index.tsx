@@ -2,59 +2,19 @@ import { motion } from "framer-motion";
 
 const exchanges = [
   {
-    name: "Bybit",
-    url: "https://www.bybit.com/en/trade/spot/PONKE/USDT",
-    img: "/svg/bybit.svg",
+    name: "DEX",
+    url: "https://dexscreener.com/",
+    img: "/svg/dex.png",
   },
   {
-    name: "OKX",
-    url: "https://www.okx.com/web3/dex-swap#inputChain=501&inputCurrency=11111111111111111111111111111111&outputChain=501&outputCurrency=5z3EqYQo9HiCEs3R84RCDMu2n7anpDMxRhdK8PSWmrRC",
-    img: "/svg/okx-dex.svg",
+    name: "PANTHOM",
+    url: "https://phantom.app",
+    img: "/svg/phantom.png",
   },
   {
-    name: "Gate",
-    url: "https://www.gate.io/trade/PONKE_USDT",
-    img: "/svg/gate.png",
-  },
-  {
-    name: "HTX",
-    url: "https://www.htx.com/en-us/trade/ponke_usdt?type=spot",
-    img: "/svg/htx.svg",
-  },
-  {
-    name: "Bitget",
-    url: "https://www.bitget.com/en-GB/spot/PONKEUSDT",
-    img: "/svg/bitget.svg",
-  },
-  {
-    name: "Woox",
-    url: "https://x.woo.org/en/trade/PONKE_USDT",
-    img: "/svg/woox.webp",
-  },
-  {
-    name: "Poloniex",
-    url: "https://poloniex.com/trade/PONKE_USDT/?type=spot",
-    img: "/svg/poloniex.svg",
-  },
-  {
-    name: "Bitmart",
-    url: "https://www.bitmart.com/trade/en-US?symbol=PONKE_USDT&layout=basic",
-    img: "/svg/bitmart.svg",
-  },
-  {
-    name: "LBank",
-    url: "https://www.lbank.com/trade/ponke_usdt/",
-    img: "/svg/lbank.svg",
-  },
-  {
-    name: "Bitrue",
-    url: "https://www.bitrue.com/trade/ponke_usdt?inviteCode=EWHZTGL",
-    img: "/svg/bitrue.png",
-  },
-  {
-    name: "MEXC",
-    url: "https://www.mexc.com/exchange/PONKE_USDT",
-    img: "/svg/mexc.svg",
+    name: "RAYDIUM",
+    url: "https://raydium.io/",
+    img: "/svg/raydium.png",
   },
 ];
 
